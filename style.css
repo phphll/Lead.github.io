@@ -1,7 +1,7 @@
 *{
   text-align : center;
 }
-input{
+input[type=text]{
   font-family: 'Noto Sans KR','Noto Sans Korean', "Nanum Gothic", sans-serif !important;
   -webkit-appearance: none;
   -webkit-border-radius: 0;
@@ -10,6 +10,23 @@ input{
   font-size: 10px;
   
 }
+input[type="checkbox"]{
+  -ms-transform: scale(2); /* IE */
+
+-moz-transform: scale(2); /* FF */
+
+-webkit-transform: scale(2); /* Safari and Chrome */
+
+-o-transform: scale(2); /* Opera */
+
+padding: 10px;
+}
+
+.item2{
+  margin-top: 30px;
+  
+}
+
 input::placeholder{
 color: #d9d9d9
 }
@@ -60,6 +77,17 @@ color: #d9d9d9
   border-radius: 8px;
   padding: 16px;
   margin-top: 25px;
+}
+.dust-class input[type=checkbox]{
+  width: 334px;
+  border: 1px solid #dddddd !important;
+  font-size: 1rem;
+  line-height: 1.45;
+  letter-spacing: -0.04rem;
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 25px;
+  
 }
 .b-button{
   
