@@ -28,63 +28,89 @@
 <div class="responseitem">
   <div class="item1">
 <dev class="dust-class">
-  <label for="first_name">First Name</label>
-  <input  id="first_name" maxlength="40" name="first_name" size="20" type="text" />
-</dev>
-</div>
-<div class="item1">
-<dev class="dust-class">
-  <label for="last_name">Last Name</label>
-  <input  id="last_name" maxlength="80" name="last_name" size="20" type="text" />
-</dev>
-<br>
-</div>
-<div class="item1">
-<dev class="dust-class">
-  <label for="email">Email</label>
-  <input  id="email" maxlength="80" name="email" size="20" type="text" />
-</dev>
-</div>
-<div class="item1">
-<dev class="dust-class"> 
-  <label for="company">Company</label>
-  <input  id="company" maxlength="40" name="company" size="20" type="text" />
-</dev>
-</div>
-<div class="item1">
-<dev class="dust-class">
-  <label for="city">City</label>
-  <input  id="city" maxlength="40" name="city" size="20" type="text" /><br>
-</dev>
-</div>
-<div class="item1">
-<dev class="dust-class">
-  <label for="state">State/Province</label><input  id="state" maxlength="20" name="state" size="20" type="text" /><br>
+  <label>현장</label>
+  <select  id="00NIR000009MUiq" name="00NIR000009MUiq" title="현장"><option value="">--없음--</option><option value="가경자이(충북)">가경자이(충북)</option>
+    <option value="장유자이더파크">장유자이더파크</option>
+    <option value="동대구역센트럴시티자이">동대구역센트럴시티자이</option>
+    </select>
 </dev>
 </div>
 
 <div class="item1">
   <dev class="dust-class">
-<label>방문목적</label><select  id="00NIR000009MQIT" name="00NIR000009MQIT" title="방문목적"><option value="">--없음--</option><option value="부동산">부동산</option>
-<option value="공사">공사</option>
-<option value="AS">AS</option>
-<option value="청소">청소</option>
-<option value="단순(기타)">단순(기타)</option>
-</select><br>
+<label>예약일</label>
+<span class="dateInput dateOnlyInput"><input  id="00NIR000009MQGr" name="00NIR000009MQGr" size="12" type="text" /></span>
 
 </dev>
 </div>
-<div class="item2">
+
+<div class="item1">
 <dev class="dust-class">
-<label>신분확인여부</label>
+  <label >시간대</label>
+  <select  id="00NIR000009MQGw" name="00NIR000009MQGw" title="시간대"><option value="">--없음--</option><option value="9-10시">9-10시</option>
+    <option value="10-11시">10-11시</option>
+    <option value="11-12시">11-12시</option>
+    <option value="12-13시">12-13시</option>
+    <option value="13-14시">13-14시</option>
+    <option value="14-15시">14-15시</option>
+    <option value="15-16시">15-16시</option>
+    </select>
+</dev>
+<br>
+</div>
 
 
-  <input  id="00NIR000009MQIx" name="00NIR000009MQIx" type="checkbox" value="1"  /><br>
 
-
-
+<div class="item1">
+<dev class="dust-class">
+  <label >입주자명</label>
+  <input  id="00NIR000009MV50" maxlength="255" name="00NIR000009MV50" size="20" type="text" />
 </dev>
 </div>
+<div class="item1">
+<dev class="dust-class"> 
+  <label for="company">관계</label>
+  <select  id="00NIR000009MQHu" name="00NIR000009MQHu" title="관계"><option value="">--없음--</option><option value="계약자">계약자</option>
+    <option value="남편">남편</option>
+    <option value="아내">아내</option>
+    <option value="부">부</option>
+    <option value="모">모</option>
+    <option value="자">자</option>
+    <option value="녀">녀</option>
+    <option value="조부모">조부모</option>
+    <option value="시부모">시부모</option>
+    <option value="시조부모">시조부모</option>
+    <option value="친인척">친인척</option>
+    <option value="도우미">도우미</option>
+    <option value="기타">기타</option>
+    </select>
+</dev>
+</div>
+<div class="item1">
+<dev class="dust-class">
+  <label >방문목적</label>
+  <select  id="00NIR000009MQIT" name="00NIR000009MQIT" title="방문목적"><option value="">--없음--</option><option value="부동산">부동산</option>
+    <option value="공사">공사</option>
+    <option value="AS">AS</option>
+    <option value="청소">청소</option>
+    <option value="단순(기타)">단순(기타)</option>
+    </select>
+</dev>
+</div>
+<div class="item1">
+<dev class="dust-class">
+  <label for="state">예약 비고</label>
+  <input  id="00NIR000009MQId" maxlength="255" name="00NIR000009MQId" size="20" type="text" />
+</dev>
+</div>
+
+<div class="item1">
+  <dev class="dust-class">
+    <input class="b-button normal" type="submit" name="submit">/>
+  </dev>
+  </div>
+
+
 
 
 
@@ -92,11 +118,7 @@
 
 </div>
 <br>
-<div class="footeritem">
 
-  <input class="b-button normal" type="submit" name="submit">
-
-</div>
 </div>
   </form>
 </div>
