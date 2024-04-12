@@ -7,10 +7,7 @@
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js"></script>
-  <script src="https://www.google.com/recaptcha/api.js"></script>
-    <script>
-    function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null ||        response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500); 
-</script>
+    
 </head>
 <body>
   <div class="allpage">
@@ -23,7 +20,6 @@
   <!--  ----------------------------------------------------------------------  -->
   <!-- onsubmit="beforeSubmit(event)" -->
   <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DIR000001KAiS"  method="POST">
-    <input type=hidden name='captcha_settings' value='{"keyname":"Newkey412","fallback":"true","orgId":"00DIR000001KAiS","ts":""}'>
   <input type=hidden name="oid" value="00DIR000001KAiS">
   <!-- <input type=hidden name="retURL" value="./thxforpage.html"> -->
   <input type=hidden name="retURL" value="https://phphll.github.io/Lead.github.io/thxforpage.html">
@@ -97,9 +93,9 @@
 </div>
 <br>
 <div class="footeritem">
-  <div class="g-recaptcha" data-sitekey="6LfujbgpAAAAACIfgkzElkFye1b1o8j8mDq1ZZQf"></div><br>
-  <!-- data-callback="captchaSuccess" -->
+
   <input class="b-button normal" type="submit" name="submit">
+
 </div>
 </div>
   </form>
