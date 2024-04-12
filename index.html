@@ -10,6 +10,10 @@
   <script src="https://www.google.com/recaptcha/api.js"></script>
     <script>
     function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null ||        response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500); 
+
+
+    let captchaChecked = false;
+
 </script>
 </head>
 <body>
@@ -97,7 +101,7 @@
 </div>
 <br>
 <div class="footeritem">
-  <div class="g-recaptcha"data-callback="captchaSuccess" data-sitekey="6LfujbgpAAAAACIfgkzElkFye1b1o8j8mDq1ZZQf"></div><br>
+  <div class="g-recaptcha" data-callback="captchaSuccess" data-sitekey="6LfujbgpAAAAACIfgkzElkFye1b1o8j8mDq1ZZQf"></div><br>
   <input class="b-button normal" type="submit" name="submit">
 </div>
 </div>
