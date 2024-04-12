@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
@@ -16,19 +17,13 @@
   <div class="mainheader">
     <h1 class="normal">Salesforce Web-to-Lead </h1>
   </div>
-    <!--  ----------------------------------------------------------------------  -->
-<!--  참고: 다음 <META>요소를 <HEAD> 페이지에 추가하십시오.  필요한 경우 매개 변수를 수정하여 HTML 페이지의 문자   -->
-<!--  집합을 지정하십시오.                                                             -->
-<!--  ----------------------------------------------------------------------  -->
-
-<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
-
+   
   <!--  ----------------------------------------------------------------------  -->
   <!--  참고: 다음 <FORM>요소를 페이지에 추가하십시오.                                           -->
   <!--  ----------------------------------------------------------------------  -->
   
-  <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DIR000001KAiS" onsubmit="beforeSubmit(event)" method="POST">
-  <input type=hidden name='captcha_settings' value='{"keyname":"GitHub","fallback":"true","orgId":"00DIR000001KAiS","ts":""}'>
+  <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DIR000001KAiS" method="POST">
+    <input type=hidden name='captcha_settings' value='{"keyname":"Newkey412","fallback":"true","orgId":"00DIR000001KAiS","ts":""}'>
   <input type=hidden name="oid" value="00DIR000001KAiS">
   <!-- <input type=hidden name="retURL" value="./thxforpage.html"> -->
   <input type=hidden name="retURL" value="https://phphll.github.io/Lead.github.io/thxforpage.html">
@@ -37,28 +32,33 @@
 <div class="responseitem">
   <div class="item1">
 <dev class="dust-class">
-  <label for="first_name">First Name</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" />
+  <label for="first_name">First Name</label>
+  <input  id="first_name" maxlength="40" name="first_name" size="20" type="text" />
 </dev>
 </div>
 <div class="item1">
 <dev class="dust-class">
-  <label for="last_name">Last Name</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" />
+  <label for="last_name">Last Name</label>
+  <input  id="last_name" maxlength="80" name="last_name" size="20" type="text" />
 </dev>
 <br>
 </div>
 <div class="item1">
-<dev class="dust-class"  >
-  <label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" />
+<dev class="dust-class">
+  <label for="email">Email</label>
+  <input  id="email" maxlength="80" name="email" size="20" type="text" />
+</dev>
 </div>
-
 <div class="item1">
 <dev class="dust-class"> 
-  <label for="company">Company</label><input  id="company" maxlength="40" name="company" size="20" type="text" />
-</div></dev>
-  
+  <label for="company">Company</label>
+  <input  id="company" maxlength="40" name="company" size="20" type="text" />
+</dev>
+</div>
 <div class="item1">
 <dev class="dust-class">
-  <label for="city">City</label><input  id="city" maxlength="40" name="city" size="20" type="text" /><br>
+  <label for="city">City</label>
+  <input  id="city" maxlength="40" name="city" size="20" type="text" /><br>
 </dev>
 </div>
 <div class="item1">
@@ -76,8 +76,8 @@
 <option value="단순(기타)">단순(기타)</option>
 </select><br>
 
-</div>
 </dev>
+</div>
 <div class="item2">
 <dev class="dust-class">
 <label>신분확인여부</label>
