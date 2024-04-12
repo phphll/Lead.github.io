@@ -22,7 +22,7 @@
   <!--  참고: 다음 <FORM>요소를 페이지에 추가하십시오.                                           -->
   <!--  ----------------------------------------------------------------------  -->
   
-  <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DIR000001KAiS" method="POST">
+  <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DIR000001KAiS" onsubmit="beforeSubmit(event)" method="POST">
     <input type=hidden name='captcha_settings' value='{"keyname":"Newkey412","fallback":"true","orgId":"00DIR000001KAiS","ts":""}'>
   <input type=hidden name="oid" value="00DIR000001KAiS">
   <!-- <input type=hidden name="retURL" value="./thxforpage.html"> -->
@@ -97,7 +97,7 @@
 </div>
 <br>
 <div class="footeritem">
-  <div class="g-recaptcha" data-sitekey="6LfujbgpAAAAACIfgkzElkFye1b1o8j8mDq1ZZQf"></div><br>
+  <div class="g-recaptcha"data-callback="captchaSuccess" data-sitekey="6LfujbgpAAAAACIfgkzElkFye1b1o8j8mDq1ZZQf"></div><br>
   <input class="b-button normal" type="submit" name="submit">
 </div>
 </div>
