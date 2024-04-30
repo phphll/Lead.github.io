@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="kr">
 <head>
   <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
   <meta charset="UTF-8">
@@ -8,29 +8,29 @@
   <link rel="icon" href="./android-icon-144x144.png">
   <link rel="stylesheet" href="style.css">
   <script src="script.js"></script>
-    
+
 </head>
 <body>
   <div class="allpage">
   <div class="mainheader">
-    <h1 class="normal">Salesforce Web-to-Lead </h1>
+    <h1 class="normal">고객방문접수</h1>
   </div>
    
   <!--  ----------------------------------------------------------------------  -->
   <!--  참고: 다음 <FORM>요소를 페이지에 추가하십시오.                                           -->
   <!--  ----------------------------------------------------------------------  -->
   <!-- onsubmit="beforeSubmit(event)" -->
-  <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DIR000001KAiS"  method="POST">
+  <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DIR000001KAiS" id="myForm" method="POST">
   <input type=hidden name="oid" value="00DIR000001KAiS">
   <!-- <input type=hidden name="retURL" value="./thxforpage.html"> -->
   <input type=hidden name="retURL" value="https://phphll.github.io/Lead.github.io/thxforpage.html">
-    
+
 <div class="mainitem">
 <div class="responseitem">
   <div class="item1">
 <dev class="dust-class">
   <label>현장</label>
-  <select  id="00NIR000009MUiq" name="00NIR000009MUiq" title="현장"><option value="">--없음--</option><option value="가경자이(충북)">가경자이(충북)</option>
+  <select  id="00NIR000009MUiq" name="00NIR000009MUiq" title="현장" ><option value="">--없음--</option><option value="가경자이(충북)">가경자이(충북)</option>
     <option value="장유자이더파크">장유자이더파크</option>
     <option value="동대구역센트럴시티자이">동대구역센트럴시티자이</option>
     </select>
@@ -40,7 +40,7 @@
 <div class="item1">
   <dev class="dust-class">
 <label>예약일</label>
-<span class="dateInput dateOnlyInput"><input  id="00NIR000009MQGr" name="00NIR000009MQGr" size="12" type="text" /></span>
+<span class="dateInput dateOnlyInput"><input  id="00NIR000009MQGr" name="00NIR000009MQGr" size="12" type="text" required=true/></span>
 
 </dev>
 </div>
@@ -65,14 +65,14 @@
 <div class="item1">
 <dev class="dust-class">
   <label >입주자명</label>
-  <input  id="00NIR000009MV50" maxlength="255" name="00NIR000009MV50" size="20" type="text" />
+  <input  id="00NIR000009MV50" maxlength="255" name="00NIR000009MV50" size="20" type="text" required=true/>
 </dev>
 </div>
 
 <div class="item1">
   <dev class="dust-class">
 <label>방문자명</label>
-<input  id="00NIR000009MQHz" maxlength="255" name="00NIR000009MQHz" size="20" type="text" /><br>
+<input  id="00NIR000009MQHz" maxlength="255" name="00NIR000009MQHz" size="20" type="text" required=true/><br>
 </dev>
 </div>
 
@@ -80,14 +80,14 @@
   <dev class="dust-class">
 
     <label for="email">이메일</label>
-    <input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+    <input  id="email" maxlength="80" name="email" size="20" type="text" required=true/><br>
   </dev>
 </div>
 
 <div class="item1">
 <dev class="dust-class"> 
   <label for="company">관계</label>
-  <select  id="00NIR000009MQHu" name="00NIR000009MQHu" title="관계"><option value="">--없음--</option><option value="계약자">계약자</option>
+  <select  id="00NIR000009MQHu" name="00NIR000009MQHu" title="관계" ><option value="">--없음--</option><option value="계약자">계약자</option>
     <option value="남편">남편</option>
     <option value="아내">아내</option>
     <option value="부">부</option>
@@ -123,7 +123,7 @@
 
 <div class="item1">
   <dev class="dust-class">
-    <input class="b-button normal" type="submit" name="submit"/>
+    <input class="b-button normal" type="submit" name="submit" />
   </dev>
   </div>
 
@@ -139,5 +139,6 @@
 </div>
   </form>
 </div>
+
 </body>
 </html>
